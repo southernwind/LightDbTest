@@ -1,4 +1,5 @@
 <Project>
   <ItemGroup>
+    <PackageReference Update="LiteDB" Version="4.1.4"/>
   </ItemGroup>
 </Project>
