@@ -19,5 +19,10 @@ namespace LightDbTest {
 			get;
 			set;
 		}
+
+		public dynamic Metadata {
+			get;
+			set;
+		}
 	}
 }

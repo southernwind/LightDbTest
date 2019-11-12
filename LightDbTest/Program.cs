@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 
 using LiteDB;
 
@@ -19,10 +20,16 @@ namespace LightDbTest {
 					Altitude = 0
 				}
 			};
+			image.Metadata = new {
+				Exit = "fog",
+				Mental = 365262.333
+			};
 			imageFiles.Insert(image);
 
 			Console.WriteLine($"count : {imageFiles.Count()}");
 			Console.WriteLine($"id : {image.Id}");
+			var fd = db.GetCollection("imageFiles");
+			var f = fd.FindAll().ToArray();
 		}
 	}
 }
