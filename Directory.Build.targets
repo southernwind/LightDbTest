@@ -1,5 +1,5 @@
 <Project>
   <ItemGroup>
-    <PackageReference Update="LiteDB" Version="4.1.4"/>
+    <PackageReference Update="LiteDB" Version="5.0.0-beta"/>
   </ItemGroup>
 </Project>
